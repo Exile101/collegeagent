@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/respond.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbar">
@@ -16,8 +17,33 @@
 		<img src="./images/Srmseal.png" />
 	    <a class="navbar-brand" href="#">SRM University</a>
 	    <h4>India's Best Private University</h4>
-		
+		<div class="cont">
+			<span class="fa fa-2x fa-phone"></span>
+			<h3>Amarjeet Kumar</h3>
+			<h3>+91 9791060383</h3>
+		</div>
 	</header> <!-- /#header -->
+	<section class="popup">
+		<div class="diag">
+			<span class="fa fa-times closediag"></span>
+			<script type="text/javascript">
+			$(window).load(function(){
+				$('.closediag').click(function(){
+					$('.popup').fadeOut();
+
+				});
+
+			});
+			</script>
+			<h2>Please fill up the following before you proceed</h2>
+			<form>
+				<input type="text" name="name" placeholder="Name">
+				<input type="text" name="phone" placeholder="Phone">
+				<input type="email" name="email" placeholder="Email ID">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
 		<section id="slider">
 			  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			        <ol class="carousel-indicators">
@@ -175,7 +201,7 @@ The university has been voted as India's No. 1 private university by Zee News, D
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 cnt">
-						
+						<span class="fa fa-2x fa-phone"></span>
 						<h3>Amarjeet Kumar</h3>
 						<h3>+91 9791060383</h3>
 						
@@ -194,7 +220,7 @@ The university has been voted as India's No. 1 private university by Zee News, D
 			</div>
 		</footer><!-- /#Footer -->
 	</div>
-	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 	<script>

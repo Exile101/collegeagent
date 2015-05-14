@@ -31,6 +31,27 @@ p {
 	z-index: 99999px;
 
 }
+#header
+{
+	position: relative;
+}
+#header .cont
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 	200px;
+	height: auto;
+	min-height: 50px;
+	background: #fff;
+	padding: 20px;
+}
+#header .cont h3,span
+{
+	color: #2a92d3;
+	font-size: 1.2em;
+
+}
 #header *
 {
 	text-align:center;
@@ -59,6 +80,73 @@ p {
 	color: #0a88d6;
 	padding: 1em;
 }
+.popup
+{
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+.popup .diag
+{
+	min-height: 300px;
+	width: 500px;
+	display: block;
+	margin: 100px auto;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 17px 0px rgba(50, 50, 50, 0.49);
+	-moz-box-shadow:    2px 2px 17px 0px rgba(50, 50, 50, 0.49);
+	box-shadow:         2px 2px 17px 0px rgba(50, 50, 50, 0.49);
+	padding: 50px;
+	position: relative;
+}
+.popup .diag h2
+{
+	margin: 0 auto 50px auto;
+	text-align: center;
+}
+.popup .diag form input
+{
+	padding: 10px 20px;
+	border-width: 0 0 1px 1px;
+	border-color: #2a92d3;
+	border-style: solid; 
+	background: #fff;
+	min-width: 400px;
+	margin: 10px;
+}
+.popup .diag form button
+{
+	background: #2a92d3;
+	color: #fff;
+	border:none;
+	padding: 10px;
+	margin: 20px auto;
+	display: block;
+}
+.closediag
+{
+	color: #000;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+	transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+.closediag:hover
+{
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+}
+
 .mw970
 {
 	max-width: 970px;
@@ -123,7 +211,7 @@ background: #fff;
 padding: 10px;
 color: #1abc9c;
 position: absolute;
-z-index: 999;
+z-index: 499;
 top: 38%;
 }
 a.slide-right:after {
